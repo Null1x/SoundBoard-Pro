@@ -1,6 +1,6 @@
 # 🔊 SoundBoard Pro
 <img width="1983" height="793" alt="logo-soundboard-pro" src="https://github.com/user-attachments/assets/faf93ab0-98af-4152-910d-6c695594e970" />
-> **Быстрый, современный и мощный соундборд на Python (PyQt6) для стримеров, геймеров и контент-мейкеров.**
+> **Быстрый, современный и мощный саундборд на Python (PyQt6) для стримеров, геймеров и контент-мейкеров.**
 
 
 
