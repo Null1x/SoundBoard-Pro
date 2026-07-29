@@ -26,7 +26,8 @@
 | 🎬 Демонстрация работы | 🎨 Выбор тем и настройки |
 | :---: | :---: |
 | ![Демонстрация работы](СЮДА_ПЕРЕТАЩИ_ГИФКУ_ИЛИ_СКРИН_1.png) | 
-| ![Настройки и темы]<img width="1920" height="1080" alt="themes" src="https://github.com/user-attachments/assets/b04198bd-d8e1-478b-a8d5-81aeaf4a0bf5" /> |
+| ![Настройки и темы]|
+<img width="1920" height="1080" alt="themes" src="https://github.com/user-attachments/assets/b04198bd-d8e1-478b-a8d5-81aeaf4a0bf5" /> 
 
 ---
 
