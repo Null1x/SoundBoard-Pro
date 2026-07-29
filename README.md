@@ -22,7 +22,8 @@
 ---
 
 ## 📸 Демонстрация и скриншоты
-<img width="640" height="360" alt="themes" src="https://github.com/user-attachments/assets/3c9813dc-082a-4288-8c35-403eacc38392" />
+<img width="1280" height="720" alt="themes" src="https://github.com/user-attachments/assets/04bfcce1-e483-4b42-a278-ba8c1c25af57" />
+
 
 ---
 
