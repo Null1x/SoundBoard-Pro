@@ -22,13 +22,7 @@
 ---
 
 ## 📸 Демонстрация и скриншоты
-
-| 🎬 Демонстрация работы | 🎨 Выбор тем и настройки |
-| :---: | :---: |
-| ![Демонстрация работы](СЮДА_ПЕРЕТАЩИ_ГИФКУ_ИЛИ_СКРИН_1.png) | 
-| ![Настройки и темы]|
-https://github.com/user-attachments/assets/ee9f81fe-6b9b-4125-a4e4-e36cc8b14336
-
+<img width="1920" height="1080" alt="themes" src="https://github.com/user-attachments/assets/1ab4e14f-ab4a-4668-bf83-4f40855a31fb" />
 
 
 ---
