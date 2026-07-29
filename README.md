@@ -4,7 +4,7 @@
 
 
 
-## 🇷🇺 Описание на русском
+## 🇷🇺 RUS:
 
 ### 🚀 О проекте
 **SoundBoard Pro** — это лёгкий и отзывчивый соундборд, созданный с нуля, чтобы избавить вас от задержек, лагов и перегруженного интерфейса аналогов. 
@@ -21,13 +21,13 @@
 
 ---
 
-## 📸 Демонстрация и скриншоты
+## 📸 Демонстрация | Demonstration 📸
 <img width="1280" height="720" alt="themes" src="https://github.com/user-attachments/assets/04bfcce1-e483-4b42-a278-ba8c1c25af57" />
 
 
 ---
 
-## 🌍 English Description
+## 🌍 ENG:
 
 # 🔊 SoundBoard Pro
 > **Fast, modern, and lightweight Python (PyQt6) soundboard with dual audio output for gamers, streamers, and creators.**
