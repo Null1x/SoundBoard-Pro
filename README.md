@@ -22,7 +22,7 @@
 ---
 
 ## 📸 Демонстрация | Demonstration 📸
-<img width="1920" height="1080" alt="demonstation_003" src="https://github.com/user-attachments/assets/df75883a-8afa-43ca-abf1-f7c1108238ff" />
+<img width="640" height="360" alt="demonstation" src="https://github.com/user-attachments/assets/8edb734c-f6f8-438e-876d-eb769e41dd1c" />
 
 
 ---
