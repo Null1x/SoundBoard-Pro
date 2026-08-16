@@ -46,4 +46,4 @@ Its core feature is **True Dual-Audio Routing**: play sound effects simultaneous
 * 📦 **Standalone Executable:** Single `.exe` binary with zero extra dependencies required.
 
 ---
-<img width="1983" height="793" alt="SCHEDULED RELEASE" src="https://github.com/user-attachments/assets/9edd9155-1080-4c05-bf15-f741cb6703ed" />
+<img width="1983" height="793" alt="127da009-d06d-4479-a604-a2eceb68d61d" src="https://github.com/user-attachments/assets/3e0b160d-ff12-4815-9c93-7da60db6b5a9" />
