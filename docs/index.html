@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .lang-btn.primary{background:linear-gradient(135deg,var(--accent),#5134a1);border-color:transparent}
 
 /* Header — floating glass island (visible from the very beginning) */
-header{position:fixed;top:18px;left:50%;right:auto;width:min(calc(100% - 32px),1160px);transform:translateX(-50%);z-index:1000;padding:0;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(7,7,11,var(--scroll-alpha,.58));backdrop-filter:blur(28px) saturate(165%);-webkit-backdrop-filter:blur(28px) saturate(165%);box-shadow:0 18px 48px rgba(0,0,0,.30),0 0 34px rgba(107,70,193,.09);opacity:1;overflow:hidden;transition:background-color .12s linear,border-color .2s ease,box-shadow .28s ease;backface-visibility:hidden}
+header{position:fixed;top:18px;left:50%;right:auto;width:min(calc(100% - 32px),1160px);transform:translateX(-50%);z-index:1000;padding:0;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(7,7,11,var(--scroll-alpha,.58));backdrop-filter:blur(34px) saturate(165%);-webkit-backdrop-filter:blur(34px) saturate(165%);box-shadow:0 18px 48px rgba(0,0,0,.30),0 0 34px rgba(107,70,193,.09);opacity:1;overflow:hidden;transition:background-color .12s linear,border-color .2s ease,box-shadow .28s ease;backface-visibility:hidden}
 header:before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));pointer-events:none;z-index:0}
 header.scrolled{background:rgba(6,6,10,var(--scroll-alpha,.64));border-color:rgba(255,255,255,.105);box-shadow:0 20px 52px rgba(0,0,0,.34),0 0 38px rgba(107,70,193,.11)}
 header .nav{position:relative;z-index:1}
@@ -637,14 +637,36 @@ function updateHeader(){
   header.style.opacity=(1-(t*0.02)).toFixed(3);
 }
 
-function updateActiveNav(){
-  const marker=window.scrollY+Math.min(window.innerHeight*.32,260);
-  let current="";
-  sections.forEach(section=>{if(section.offsetTop<=marker) current=section.id;});
-  navLinks.forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+current));
+function setActiveNav(id){
+  navLinks.forEach(link=>{
+    link.classList.toggle("active",link.getAttribute("href")===`#${id}`);
+  });
 }
-let headerRaf=0; addEventListener("scroll",()=>{ if(headerRaf) return; headerRaf=requestAnimationFrame(()=>{ headerRaf=0; updateHeader(); updateActiveNav(); }); },{passive:true});
-addEventListener("resize",updateActiveNav);
+
+function updateActiveNav(){
+  if(!sections.length) return;
+
+  // Use the section closest to the visual center of the viewport.
+  // This keeps the active tab in sync even when the selected section starts
+  // several hundred pixels below the sticky header (as with Funding).
+  const viewportCenter=window.scrollY+window.innerHeight/2;
+  let current=sections[0].id;
+  let bestDistance=Infinity;
+
+  sections.forEach(section=>{
+    const center=section.offsetTop+section.offsetHeight/2;
+    const distance=Math.abs(center-viewportCenter);
+    if(distance<bestDistance){
+      bestDistance=distance;
+      current=section.id;
+    }
+  });
+
+  setActiveNav(current);
+}
+let navAnimating=false;
+let headerRaf=0; addEventListener("scroll",()=>{ if(headerRaf) return; headerRaf=requestAnimationFrame(()=>{ headerRaf=0; updateHeader(); if(!navAnimating) updateActiveNav(); }); },{passive:true});
+addEventListener("resize",()=>{ if(!navAnimating) updateActiveNav(); });
 
 navLinks.forEach(link=>{
   link.addEventListener("click",e=>{
@@ -653,6 +675,13 @@ navLinks.forEach(link=>{
     const target=document.querySelector(id);
     if(!target) return;
     e.preventDefault();
+
+    // Keep the clicked destination active for the entire scroll animation.
+    // Scroll events fire while the page is moving and must not temporarily
+    // switch the highlight to another section.
+    navAnimating=true;
+    setActiveNav(id.slice(1));
+
     const headerOffset=(header?.offsetHeight||60)+26;
     const top=target.getBoundingClientRect().top+window.scrollY-headerOffset;
     const start=window.scrollY;
@@ -662,8 +691,13 @@ navLinks.forEach(link=>{
     const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
     const step=now=>{
       const p=Math.min(1,(now-t0)/duration);
-      window.scrollTo(0,start+distance*ease(p));
-      if(p<1) requestAnimationFrame(step);
+      window.scrollTo({top:start+distance*ease(p),left:0,behavior:"instant"});
+      if(p<1){
+        requestAnimationFrame(step);
+      }else{
+        setActiveNav(id.slice(1));
+        navAnimating=false;
+      }
     };
     requestAnimationFrame(step);
   });
