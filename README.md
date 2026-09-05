@@ -33,7 +33,7 @@ https://www.donationalerts.com/r/nullix
 
 ### 💜 Support the Project
 
-We are currently raising **1,000 ₽** to support development and release preparation.
+We are currently raising **$11 USD** to support development and release preparation.
 
 👉 **Support the project:**  
 https://www.donationalerts.com/r/nullix
