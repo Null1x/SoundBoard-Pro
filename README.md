@@ -2,12 +2,6 @@
 
 <img width="1983" height="793" alt="logo-soundboard-pro" src="https://github.com/user-attachments/assets/faf93ab0-98af-4152-910d-6c695594e970" />
 
-> **Быстрый, современный и мощный саундборд на Python (PyQt6) для стримеров, геймеров и контент-мейкеров.**
-
-🌐 **Сайт:** https://null1x.github.io/SoundBoard-Pro/  
-💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro  
-💜 **Поддержать проект:** https://www.donationalerts.com/r/nullix
-
 ---
 
 ## 🇷🇺 RUS
@@ -23,9 +17,11 @@
 👉 **Поддержать проект:**  
 https://www.donationalerts.com/r/nullix
 
-### 📸 Демонстрация
+### 🔗 Ссылки
 
-<img width="900" alt="SoundBoard Pro" src="https://github.com/user-attachments/assets/8edb734c-f6f8-438e-876d-eb769e41dd1c" />
+🌐 **Сайт:** https://null1x.github.io/SoundBoard-Pro/  
+💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro  
+📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
 
@@ -42,18 +38,11 @@ We are currently raising **1,000 ₽** to support development and release prepar
 👉 **Support the project:**  
 https://www.donationalerts.com/r/nullix
 
-### 📸 Demonstration
-
-<img width="900" alt="SoundBoard Pro" src="https://github.com/user-attachments/assets/8edb734c-f6f8-438e-876d-eb769e41dd1c" />
-
----
-
-## 🔗 Links
+### 🔗 Links
 
 🌐 **Website:** https://null1x.github.io/SoundBoard-Pro/  
 💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro  
-📺 **YouTube:** https://www.youtube.com/@NullixYT  
-💜 **DonationAlerts:** https://www.donationalerts.com/r/nullix
+📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
 
