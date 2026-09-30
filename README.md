@@ -25,7 +25,9 @@ https://www.donationalerts.com/r/nullix
 ### 🔗 Ссылки
 
 🌐 **Сайт:** https://null1x.github.io/SoundBoard-Pro/
+
 💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro
+
 📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
@@ -51,7 +53,9 @@ https://www.donationalerts.com/r/nullix
 ### 🔗 Links
 
 🌐 **Website:** https://null1x.github.io/SoundBoard-Pro/
+
 💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro
+
 📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
