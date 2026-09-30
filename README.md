@@ -8,19 +8,24 @@
 
 ### 📅 Релиз
 
-🟣 **Публичный релиз запланирован на 30 сентября.**
+🟣 **Публичный релиз состоялся 30 сентября 2026 года.**
+
+🎉 **SoundBoard Pro v1.0.0 уже доступен для скачивания!**
+
+👉 **Скачать:**
+https://github.com/Null1x/SoundBoard-Pro/releases/latest
 
 ### 💜 Поддержка проекта
 
-Сейчас идёт сбор **1 000 ₽** на развитие проекта и подготовку релиза.
+Сейчас идёт сбор **1 000 ₽** на развитие SoundBoard Pro и дальнейшие обновления.
 
-👉 **Поддержать проект:**  
+👉 **Поддержать проект:**
 https://www.donationalerts.com/r/nullix
 
 ### 🔗 Ссылки
 
-🌐 **Сайт:** https://null1x.github.io/SoundBoard-Pro/  
-💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro  
+🌐 **Сайт:** https://null1x.github.io/SoundBoard-Pro/
+💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro
 📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
@@ -29,21 +34,26 @@ https://www.donationalerts.com/r/nullix
 
 ### 📅 Release
 
-🟣 **The public release is planned for September 30.**
+🟣 **The public release took place on September 30, 2026.**
+
+🎉 **SoundBoard Pro v1.0.0 is now available for download!**
+
+👉 **Download:**
+https://github.com/Null1x/SoundBoard-Pro/releases/latest
 
 ### 💜 Support the Project
 
-We are currently raising **$11 USD** to support development and release preparation.
+We are currently raising **$11 USD** to support SoundBoard Pro development and future updates.
 
-👉 **Support the project:**  
+👉 **Support the project:**
 https://www.donationalerts.com/r/nullix
 
 ### 🔗 Links
 
-🌐 **Website:** https://null1x.github.io/SoundBoard-Pro/  
-💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro  
+🌐 **Website:** https://null1x.github.io/SoundBoard-Pro/
+💻 **GitHub:** https://github.com/Null1x/SoundBoard-Pro
 📺 **YouTube:** https://www.youtube.com/@NullixYT
 
 ---
 
-© Null1x — Все права защищены
+© Null1x — All rights reserved
