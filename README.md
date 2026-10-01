@@ -10,7 +10,7 @@
 
 🟣 **Публичный релиз состоялся 30 сентября 2026 года.**
 
-🎉 **SoundBoard Pro v1.0.0 уже доступен для скачивания!**
+🎉 **SoundBoard Pro v1.0 уже доступен для скачивания!**
 
 👉 **Скачать:**
 https://github.com/Null1x/SoundBoard-Pro/releases/latest
@@ -38,7 +38,7 @@ https://www.donationalerts.com/r/nullix
 
 🟣 **The public release took place on September 30, 2026.**
 
-🎉 **SoundBoard Pro v1.0.0 is now available for download!**
+🎉 **SoundBoard Pro v1.0 is now available for download!**
 
 👉 **Download:**
 https://github.com/Null1x/SoundBoard-Pro/releases/latest
