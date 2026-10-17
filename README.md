@@ -21,7 +21,7 @@
 ## 🇷🇺 Русский
 
 > ### ⬇️ [Скачать SoundBoard Pro 1.0](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
-> Windows 10 / 11 · бесплатно · установка 3 минуты (нужен бесплатный виртуальный кабель VB-CABLE)
+> Windows 10 / 11 · бесплатно · установка 5 минут (нужен бесплатный виртуальный кабель VB-CABLE)
 
 ### Что это
 
@@ -49,29 +49,44 @@ SoundBoard Pro — саундборд для Windows на PyQt6. Нажимае�
 | <img src="assets/screenshot-main.png" width="520"> | <img src="assets/screenshot-settings.png" width="300"> |
 | <sub>Категории, устройства и воспроизведение</sub> | <sub>Тема, язык, экспериментальные функции</sub> |
 
-### Установка
+### Установка (5 минут)
 
 **1. Скачай установщик**
 
 Возьми `SoundBoardPro-Setup-1.0.exe` из [последнего релиза](https://github.com/Null1x/SoundBoard-Pro/releases/latest) и запусти его.
 
-**2. Поставь VB-CABLE** — бесплатный виртуальный аудиокабель, он нужен, чтобы звук попадал в микрофон
+**2. Поставь VB-CABLE** — бесплатный виртуальный аудиокабель, без него звук не попадёт в микрофон
 
 1. Скачай с [vb-audio.com/Cable](https://vb-audio.com/Cable/)
 2. Распакуй архив и запусти `VBCABLE_Setup_x64.exe` **от имени администратора**
 3. Перезагрузи компьютер
 
-**3. Запусти SoundBoard Pro**
+**3. Заведи свой микрофон в кабель**
 
-Программа сама найдёт кабель и подставит его в поле «Трансляция». В поле «Для себя» оставь свои наушники или колонки — тогда ты слышишь звук сам.
+Нажми `Win + R`, впиши `mmsys.cpl`, Enter — откроется окно «Звук».
 
-**4. Выбери `CABLE Output` как микрофон там, куда транслируешь**
+1. Вкладка **Запись** → выбери **свой настоящий микрофон** (не CABLE) → **Свойства**
+2. Вкладка **Прослушать** → поставь галочку **«Прослушивать с данного устройства»**
+3. В списке ниже, **«Воспроизводить с данного устройства»**, выбери **CABLE Input (VB-Audio Virtual Cable)**
+4. **Применить** → **ОК**
+
+Теперь в кабель идёт и твой голос, и звуки из SoundBoard Pro. Без этого шага собеседник услышит только звуки — голоса не будет.
+
+**4. Запусти SoundBoard Pro**
+
+Программа сама найдёт кабель. Если не нашла — выбери в поле трансляции **CABLE Input (VB-Audio Virtual Cable)**, а в поле «Для себя» свои наушники или колонки, чтобы слышать звуки самому.
+
+**5. Поставь `CABLE Output` микрофоном там, куда транслируешь**
 
 | Куда | Что нажать |
 |---|---|
 | **Discord** | Настройки → Голос и видео → Устройство ввода → `CABLE Output (VB-Audio Virtual Cable)` |
 | **OBS** | Источник «Захват входного аудиопотока» → устройство `CABLE Output` |
 | **Игра** | В настройках голосового чата выбери микрофоном `CABLE Output` |
+
+**6. В Discord выключи шумодав**
+
+Настройки → Голос и видео → выключи **«Эхоподавление»**, **«Шумоподавление»** (Krisp) и **«Автоматическая регулировка усиления»**. Discord считает звуки из саундборда фоновым шумом и режет их. Если звуки слышно тихо или они обрываются — проверяй это первым делом.
 
 ### Частые вопросы
 
@@ -86,6 +101,20 @@ SoundBoard Pro — саундборд для Windows на PyQt6. Нажимае�
 <summary><b>Программа не видит VB-Cable</b></summary>
 
 Убедись, что кабель установлен именно от имени администратора и что компьютер перезагружен после установки. Затем нажми в программе кнопку обновления списка устройств.
+
+</details>
+
+<details>
+<summary><b>Собеседник слышит звуки, но не слышит меня</b></summary>
+
+Пропущен шаг 3 — микрофон не заведён в кабель. `Win + R` → `mmsys.cpl` → вкладка **Запись** → свой микрофон → **Свойства** → вкладка **Прослушать** → поставь галочку **«Прослушивать с данного устройства»** и выбери в списке `CABLE Input (VB-Audio Virtual Cable)`.
+
+</details>
+
+<details>
+<summary><b>Звуки слышно тихо или они обрываются</b></summary>
+
+Это шумодав Discord. Настройки → Голос и видео → выключи «Эхоподавление», «Шумоподавление» (Krisp) и «Автоматическая регулировка усиления».
 
 </details>
 
@@ -126,7 +155,7 @@ SoundBoard Pro был бесплатным и останется бесплат�
 ## 🇬🇧 English
 
 > ### ⬇️ [Download SoundBoard Pro 1.0](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
-> Windows 10 / 11 · free · 3-minute setup (requires the free VB-CABLE virtual audio cable)
+> Windows 10 / 11 · free · 5-minute setup (requires the free VB-CABLE virtual audio cable)
 
 ### What it is
 
@@ -153,9 +182,22 @@ Built as a free replacement for Soundpad: same job, no payment.
 
 **2. Install VB-CABLE** — free virtual audio cable: [vb-audio.com/Cable](https://vb-audio.com/Cable/). Run `VBCABLE_Setup_x64.exe` **as administrator**, then reboot.
 
-**3. Launch SoundBoard Pro** — it finds the cable and sets it as the broadcasting output automatically.
+**3. Route your own microphone into the cable**
 
-**4. Select `CABLE Output (VB-Audio Virtual Cable)` as the input device** in Discord (Voice & Video → Input Device), OBS (Audio Input Capture) or your game's voice chat settings.
+Press `Win + R`, type `mmsys.cpl`, hit Enter.
+
+1. **Recording** tab → select **your real microphone** (not CABLE) → **Properties**
+2. **Listen** tab → tick **"Listen to this device"**
+3. Under **"Playback through this device"** pick **CABLE Input (VB-Audio Virtual Cable)**
+4. **Apply** → **OK**
+
+Now the cable carries both your voice and the sounds from SoundBoard Pro. Skip this step and people will hear the sounds but not you.
+
+**4. Launch SoundBoard Pro** — it finds the cable and sets it as the broadcasting output automatically. If it doesn't, pick **CABLE Input (VB-Audio Virtual Cable)** as the broadcasting device and your headphones as the monitor device.
+
+**5. Select `CABLE Output (VB-Audio Virtual Cable)` as the input device** in Discord (Voice & Video → Input Device), OBS (Audio Input Capture) or your game's voice chat settings.
+
+**6. Turn off Discord's noise suppression** — Settings → Voice & Video → disable **Echo Cancellation**, **Noise Suppression** (Krisp) and **Automatic Gain Control**. Discord treats soundboard audio as background noise and cuts it. If sounds come through too quiet or get chopped up, check this first.
 
 ### FAQ
 
@@ -170,6 +212,20 @@ It flags any unsigned `.exe`, and code signing certificates cost money — the b
 <summary><b>VB-Cable isn't detected</b></summary>
 
 Make sure it was installed as administrator and that you rebooted afterwards. Then hit the device refresh button in the app.
+
+</details>
+
+<details>
+<summary><b>People hear the sounds but not my voice</b></summary>
+
+Step 3 is missing — your microphone isn't routed into the cable. `Win + R` → `mmsys.cpl` → **Recording** tab → your microphone → **Properties** → **Listen** tab → tick **"Listen to this device"** and select `CABLE Input (VB-Audio Virtual Cable)`.
+
+</details>
+
+<details>
+<summary><b>Sounds are too quiet or keep cutting out</b></summary>
+
+That's Discord's noise suppression. Settings → Voice & Video → disable Echo Cancellation, Noise Suppression (Krisp) and Automatic Gain Control.
 
 </details>
 
