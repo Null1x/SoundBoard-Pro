@@ -100,13 +100,50 @@ header{opacity:1!important}
 @media(max-width:1180px){.hw-hang.r{display:none}}
 @media(max-width:700px){
  .hw-cw{width:130px;height:130px}
+ .hw-ff:nth-child(n+10),.hw-eye.x2{display:none}
+ .hw-bulb:nth-child(2n){display:none}
  .hw-hp.r{display:none}
  .hw-hang{display:none}
  .hw-fx,.hw-sk{display:none}
  .hw-fsk{width:52px;right:14px;top:-38px}
  .hw-fcw{width:70px;height:70px}
 }
+
+#hw-garland{position:fixed;top:0;left:0;right:0;height:44px;z-index:1;pointer-events:none}
+#hw-garland svg{display:block;width:100%;height:100%}
+#hw-garland .wire{fill:none;stroke:rgba(196,181,253,.35);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.hw-bulb{position:absolute;width:11px;height:15px;border-radius:50% 50% 45% 45%;background:var(--c);
+ box-shadow:0 0 8px var(--c),0 0 20px var(--c);animation:hwTw var(--t) ease-in-out var(--d) infinite alternate}
+.hw-bulb:before{content:"";position:absolute;left:2px;top:-4px;width:7px;height:3px;background:#2e1d4d;border-radius:1px}
+@keyframes hwTw{from{opacity:.35;filter:brightness(.7)}to{opacity:1;filter:brightness(1.25)}}
+
+.hw-hell{position:absolute;left:0;right:0;bottom:0;height:34vh;
+ background:radial-gradient(ellipse 60% 100% at 50% 100%,rgba(249,115,22,.24),rgba(139,108,255,.08) 50%,transparent 72%);
+ animation:hwHell 5s ease-in-out infinite alternate}
+@keyframes hwHell{from{opacity:.55}to{opacity:1}}
+
+.hw-eye{position:absolute;width:26px;height:9px;animation:hwPeek var(--t) ease-in-out var(--d) infinite}
+.hw-eye span{position:absolute;top:0;width:9px;height:9px;border-radius:50%;background:#fde047;
+ box-shadow:0 0 8px #fde047,0 0 18px rgba(253,224,71,.7);animation:hwBlink 7s steps(1) infinite}
+.hw-eye span:first-child{left:0}
+.hw-eye span:last-child{left:16px}
+@keyframes hwPeek{0%,6%{opacity:0}12%,40%{opacity:.85}50%,100%{opacity:0}}
+@keyframes hwBlink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+
+ 100%{transform:translate(var(--dx),-105vh);opacity:0}}
+
+.hw-ff{position:absolute;width:4px;height:4px;border-radius:50%;background:#e9d5ff;
+ box-shadow:0 0 8px #a78bfa,0 0 16px rgba(167,139,250,.6);
+ animation:hwDrift var(--t) ease-in-out var(--d) infinite alternate,hwPulse var(--p) ease-in-out infinite}
+@keyframes hwDrift{from{transform:translate(0,0)}to{transform:translate(var(--dx),var(--dy))}}
+@keyframes hwPulse{0%,100%{opacity:.25}50%{opacity:1}}
+
+
+#particles{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.hw-yard{position:absolute;left:0;right:0;bottom:0;height:150px;z-index:-1;pointer-events:none}
+.hw-yard svg{display:block;width:100%;height:100%}
+
 @media(prefers-reduced-motion:reduce){
- #hw-flash,.hw-fl,.hw-hang,.hw-bat-f,.hw-ghost,.hw-hp,.hw-sk,.hw-fsk,.hw-fog,#hw-moon:before,.hero h1 span{animation:none!important}
+ #hw-flash,#hw-garland *,#particles,.hw-bulb,.hw-hell,.hw-eye,.hw-eye span,.hw-ff,.hw-fl,.hw-hang,.hw-bat-f,.hw-ghost,.hw-hp,.hw-sk,.hw-fsk,.hw-fog,#hw-moon:before,.hero h1 span{animation:none!important}
  .hw-bat-f{display:none}
 }
