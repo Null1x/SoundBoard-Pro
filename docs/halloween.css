@@ -1,41 +1,61 @@
-:root{--hw:#f97316;--hw2:#fb923c}
+:root{--hw:#f97316;--hw2:#fb923c;--hw-ink:#c4b5fd}
 
 header{opacity:1!important}
-.hero .hw-deco{z-index:-1}
-.footer-shell{isolation:isolate}
-.footer-shell .hw-deco{z-index:-1}
+.footer-shell{isolation:isolate;position:relative}
 .hero-inner{isolation:isolate}
 
 #hw-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.hw-fog{position:absolute;left:-20%;right:-20%;bottom:-8%;height:40vh;will-change:transform;
- background:radial-gradient(ellipse 40% 55% at 30% 70%,rgba(139,108,255,.15),transparent 70%),
-            radial-gradient(ellipse 35% 50% at 72% 80%,rgba(249,115,22,.10),transparent 70%);
+#hw-vig{position:fixed;inset:0;z-index:2;pointer-events:none;
+ background:radial-gradient(ellipse at 50% 42%,transparent 58%,rgba(4,2,10,.6) 100%)}
+#hw-flash{position:fixed;inset:0;z-index:3;pointer-events:none;opacity:0;
+ background:radial-gradient(ellipse at 50% 0%,rgba(196,181,253,.38),rgba(139,108,255,.06) 55%,transparent 75%);
+ animation:hwFlash 13s linear infinite}
+@keyframes hwFlash{0%,90%,100%{opacity:0}91%{opacity:.9}92%{opacity:.15}93.5%{opacity:.75}95%{opacity:0}}
+
+.hw-fog{position:absolute;left:-20%;right:-20%;bottom:-8%;height:42vh;will-change:transform;
+ background:radial-gradient(ellipse 40% 55% at 30% 70%,rgba(139,108,255,.18),transparent 70%),
+            radial-gradient(ellipse 35% 50% at 72% 80%,rgba(249,115,22,.12),transparent 70%);
  animation:hwFog 24s ease-in-out infinite alternate}
 @keyframes hwFog{to{transform:translateX(7%)}}
 
-.hw-bat-f{position:absolute;top:var(--y);left:-90px;width:var(--s);opacity:0;will-change:transform;
- animation:hwCross var(--t) linear var(--d) infinite}
-.hw-bat-f svg{display:block;width:100%;height:auto;transform-origin:50% 60%;animation:hwFlap .45s ease-in-out infinite alternate}
-@keyframes hwCross{0%{transform:translate(0,0);opacity:0}6%{opacity:.75}94%{opacity:.75}
- 100%{transform:translate(calc(100vw + 200px),var(--dy));opacity:0}}
-@keyframes hwFlap{to{transform:scaleY(.5)}}
+.hw-cw{position:absolute;width:230px;height:230px;opacity:.85;pointer-events:none}
+.hw-cw svg{display:block;width:100%;height:100%;filter:drop-shadow(0 0 4px rgba(196,181,253,.25))}
+.hw-cw.tl{top:0;left:0}
+.hw-cw.tr{top:0;right:0;transform:scaleX(-1)}
+.hw-cw.bl{bottom:0;left:0;transform:scaleY(-1)}
+.hw-cw.br{bottom:0;right:0;transform:scale(-1)}
 
-.hw-ghost{position:absolute;bottom:14%;left:-120px;width:62px;opacity:.22;will-change:transform;
+.hw-hang{position:absolute;top:0;width:60px;margin-left:-30px;transform-origin:50% 0;
+ animation:hwSwing var(--sw,6s) ease-in-out infinite alternate}
+.hw-hang i{position:absolute;left:29px;top:0;width:1px;height:var(--len);
+ background:linear-gradient(rgba(196,181,253,0),rgba(196,181,253,.55))}
+.hw-spi{position:absolute;left:0;top:var(--len);width:60px;filter:drop-shadow(0 0 6px rgba(249,115,22,.35))}
+.hw-spi svg{display:block;width:100%;height:auto}
+@keyframes hwSwing{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+
+.hw-fl{position:absolute;animation:hwFloat var(--t) ease-in-out var(--d) infinite alternate}
+.hw-fl svg{display:block;width:100%;height:auto}
+@keyframes hwFloat{from{transform:translate(0,0) rotate(var(--r))}to{transform:translate(14px,-36px) rotate(calc(var(--r) * -1))}}
+
+.hw-bat-f{position:absolute;top:var(--y);left:-120px;width:var(--s);opacity:0;will-change:transform;
+ animation:hwCross var(--t) linear var(--d) infinite}
+.hw-bat-f svg{display:block;width:100%;height:auto;animation:hwFlap .42s ease-in-out infinite alternate}
+@keyframes hwCross{0%{transform:translate(0,0);opacity:0}6%{opacity:.85}94%{opacity:.85}
+ 100%{transform:translate(calc(100vw + 260px),var(--dy));opacity:0}}
+@keyframes hwFlap{from{transform:scaleY(1)}to{transform:scaleY(.55)}}
+
+.hw-ghost{position:absolute;bottom:14%;left:-120px;width:62px;opacity:.25;will-change:transform;
  animation:hwGhost 46s linear 6s infinite}
+.hw-ghost svg{display:block;width:100%;height:auto;filter:drop-shadow(0 0 10px rgba(196,181,253,.5))}
 @keyframes hwGhost{0%{transform:translate(0,0)}25%{transform:translate(30vw,-40px)}50%{transform:translate(60vw,10px)}
  75%{transform:translate(90vw,-50px)}100%{transform:translate(calc(100vw + 240px),0)}}
 
-.hw-sp{position:absolute;top:-4px;width:46px;transform-origin:50% 0;
- animation:hwSway 5.5s ease-in-out var(--d,0s) infinite}
-.hw-sp.l{left:1.6%}.hw-sp.r{right:2.4%;width:38px}
-.hw-sp svg{display:block;width:100%;height:auto;filter:drop-shadow(0 0 6px rgba(249,115,22,.35))}
-@media(max-width:1180px){.hw-sp{display:none}}
-
 .hero{position:relative}
 #hw-moon{position:absolute;top:8%;right:7%;width:118px;aspect-ratio:1;border-radius:50%;z-index:-1;
- background:radial-gradient(circle at 34% 32%,#fff8e0,#f1e2ae 58%,#cdb87c);opacity:.8}
+ background:radial-gradient(circle at 34% 32%,#fff8e0,#f1e2ae 58%,#cdb87c);opacity:.85;
+ box-shadow:0 0 80px rgba(253,230,138,.25)}
 #hw-moon:before{content:"";position:absolute;inset:-70%;border-radius:50%;
- background:radial-gradient(circle,rgba(255,226,160,.28),transparent 62%);animation:hwMoon 7s ease-in-out infinite alternate}
+ background:radial-gradient(circle,rgba(255,226,160,.3),transparent 62%);animation:hwMoon 7s ease-in-out infinite alternate}
 #hw-moon:after{content:"";position:absolute;inset:0;border-radius:50%;
  background:radial-gradient(circle at 62% 60%,rgba(150,130,90,.35) 0 9%,transparent 10%),
             radial-gradient(circle at 36% 62%,rgba(150,130,90,.28) 0 6%,transparent 7%),
@@ -43,22 +63,50 @@ header{opacity:1!important}
 @keyframes hwMoon{from{opacity:.55;transform:scale(.96)}to{opacity:1;transform:scale(1.04)}}
 @media(max-width:700px){#hw-moon{width:76px;top:3%;right:5%}}
 
-.hero-logo{filter:drop-shadow(0 0 20px rgba(249,115,22,.4))}
+.hw-hp{position:absolute;pointer-events:none;z-index:1;filter:drop-shadow(0 0 26px rgba(249,115,22,.4));
+ animation:hwBob 5s ease-in-out infinite alternate}
+.hw-hp svg{display:block;width:100%;height:auto}
+.hw-hp.r{right:6%;bottom:90px;width:84px;opacity:.9}
+@keyframes hwBob{from{transform:translateY(0) rotate(-3deg)}to{transform:translateY(-14px) rotate(3deg)}}
+
+.hw-sk{position:absolute;pointer-events:none;z-index:1;filter:drop-shadow(0 0 10px rgba(196,181,253,.2));
+ animation:hwBob 6s ease-in-out infinite alternate}
+.hw-sk svg{display:block;width:100%;height:auto}
+
+.hero-logo{filter:drop-shadow(0 0 22px rgba(249,115,22,.45))}
 .hero h1 span{background:linear-gradient(90deg,#a78bfa,#fb923c,#a78bfa);background-size:220% 100%;
  -webkit-background-clip:text;background-clip:text;color:transparent;animation:hwText 7s linear infinite}
 @keyframes hwText{to{background-position:220% 0}}
-.eyebrow:before{content:"🎃 "}
+
+.eyebrow:before{content:"";display:inline-block;width:16px;height:16px;margin-right:8px;vertical-align:-3px;
+ background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><ellipse cx='12' cy='14' rx='10' ry='8' fill='%23f97316'/><path d='M10 4h4v3h-4z' fill='%234d7c0f'/><path d='M6.5 11L10 11L8.25 14Z' fill='%231c0a00'/><path d='M14 11L17.5 11L15.75 14Z' fill='%231c0a00'/><path d='M7 16.5H17L15.5 18.5L13 17L11 18.5L9 17Z' fill='%231c0a00'/></svg>") center/contain no-repeat}
+
+.feature{position:relative;overflow:hidden}
 .feature:hover .icon-box{color:var(--hw2);background:rgba(249,115,22,.16);box-shadow:0 0 28px rgba(249,115,22,.35)}
 .feature:hover,.shot:hover{border-color:rgba(249,115,22,.55)}
+.hw-fcw{position:absolute;top:0;right:0;width:92px;height:92px;opacity:.5;transform:scaleX(-1);pointer-events:none;transition:opacity .4s}
+.hw-fcw svg{display:block;width:100%;height:100%}
+.feature:hover .hw-fcw{opacity:.85}
+
 .download-btn{background:linear-gradient(145deg,#fb923c,#ea580c);color:#1c0a00;box-shadow:0 10px 28px rgba(234,88,12,.4)}
 .download-btn:hover{box-shadow:0 14px 38px rgba(234,88,12,.6)}
 .splash-icon{box-shadow:0 0 50px rgba(249,115,22,.45)}
 .funding-fill{background:linear-gradient(90deg,#6b46c1,#f97316)}
 
-#hwToggle{position:fixed;left:14px;bottom:14px;z-index:1001;width:42px;height:42px;border-radius:50%;
- border:1px solid rgba(249,115,22,.45);background:rgba(18,18,20,.85);color:#fff;font-size:20px;cursor:pointer;
- backdrop-filter:blur(8px);transition:transform .2s,box-shadow .2s}
-#hwToggle:hover,#hwToggle:focus-visible{transform:scale(1.08);box-shadow:0 0 18px rgba(249,115,22,.5);outline:0}
-#hwToggle[aria-pressed=false]{opacity:.55;filter:grayscale(1)}
-.hw-off #hw-layer,.hw-off #hw-moon,.hw-off #particles,.hw-off .hw-deco{display:none}
-@media(prefers-reduced-motion:reduce){#hw-layer,#particles{display:none}}
+.hw-fsk{position:absolute;right:34px;top:-50px;width:70px;z-index:2;pointer-events:none;
+ filter:drop-shadow(0 0 12px rgba(196,181,253,.25));animation:hwBob 6s ease-in-out infinite alternate}
+.hw-fsk svg{display:block;width:100%;height:auto}
+
+@media(max-width:1180px){.hw-hang.r{display:none}}
+@media(max-width:700px){
+ .hw-cw{width:130px;height:130px}
+ .hw-hp.r{display:none}
+ .hw-hang{display:none}
+ .hw-fx,.hw-sk{display:none}
+ .hw-fsk{width:52px;right:14px;top:-38px}
+ .hw-fcw{width:70px;height:70px}
+}
+@media(prefers-reduced-motion:reduce){
+ #hw-flash,.hw-fl,.hw-hang,.hw-bat-f,.hw-ghost,.hw-hp,.hw-sk,.hw-fsk,.hw-fog,#hw-moon:before,.hero h1 span{animation:none!important}
+ .hw-bat-f{display:none}
+}
