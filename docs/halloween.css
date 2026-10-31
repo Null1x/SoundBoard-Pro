@@ -1,0 +1,64 @@
+:root{--hw:#f97316;--hw2:#fb923c}
+
+header{opacity:1!important}
+.hero .hw-deco{z-index:-1}
+.footer-shell{isolation:isolate}
+.footer-shell .hw-deco{z-index:-1}
+.hero-inner{isolation:isolate}
+
+#hw-layer{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hw-fog{position:absolute;left:-20%;right:-20%;bottom:-8%;height:40vh;will-change:transform;
+ background:radial-gradient(ellipse 40% 55% at 30% 70%,rgba(139,108,255,.15),transparent 70%),
+            radial-gradient(ellipse 35% 50% at 72% 80%,rgba(249,115,22,.10),transparent 70%);
+ animation:hwFog 24s ease-in-out infinite alternate}
+@keyframes hwFog{to{transform:translateX(7%)}}
+
+.hw-bat-f{position:absolute;top:var(--y);left:-90px;width:var(--s);opacity:0;will-change:transform;
+ animation:hwCross var(--t) linear var(--d) infinite}
+.hw-bat-f svg{display:block;width:100%;height:auto;transform-origin:50% 60%;animation:hwFlap .45s ease-in-out infinite alternate}
+@keyframes hwCross{0%{transform:translate(0,0);opacity:0}6%{opacity:.75}94%{opacity:.75}
+ 100%{transform:translate(calc(100vw + 200px),var(--dy));opacity:0}}
+@keyframes hwFlap{to{transform:scaleY(.5)}}
+
+.hw-ghost{position:absolute;bottom:14%;left:-120px;width:62px;opacity:.22;will-change:transform;
+ animation:hwGhost 46s linear 6s infinite}
+@keyframes hwGhost{0%{transform:translate(0,0)}25%{transform:translate(30vw,-40px)}50%{transform:translate(60vw,10px)}
+ 75%{transform:translate(90vw,-50px)}100%{transform:translate(calc(100vw + 240px),0)}}
+
+.hw-sp{position:absolute;top:-4px;width:46px;transform-origin:50% 0;
+ animation:hwSway 5.5s ease-in-out var(--d,0s) infinite}
+.hw-sp.l{left:1.6%}.hw-sp.r{right:2.4%;width:38px}
+.hw-sp svg{display:block;width:100%;height:auto;filter:drop-shadow(0 0 6px rgba(249,115,22,.35))}
+@media(max-width:1180px){.hw-sp{display:none}}
+
+.hero{position:relative}
+#hw-moon{position:absolute;top:8%;right:7%;width:118px;aspect-ratio:1;border-radius:50%;z-index:-1;
+ background:radial-gradient(circle at 34% 32%,#fff8e0,#f1e2ae 58%,#cdb87c);opacity:.8}
+#hw-moon:before{content:"";position:absolute;inset:-70%;border-radius:50%;
+ background:radial-gradient(circle,rgba(255,226,160,.28),transparent 62%);animation:hwMoon 7s ease-in-out infinite alternate}
+#hw-moon:after{content:"";position:absolute;inset:0;border-radius:50%;
+ background:radial-gradient(circle at 62% 60%,rgba(150,130,90,.35) 0 9%,transparent 10%),
+            radial-gradient(circle at 36% 62%,rgba(150,130,90,.28) 0 6%,transparent 7%),
+            radial-gradient(circle at 52% 28%,rgba(150,130,90,.25) 0 5%,transparent 6%)}
+@keyframes hwMoon{from{opacity:.55;transform:scale(.96)}to{opacity:1;transform:scale(1.04)}}
+@media(max-width:700px){#hw-moon{width:76px;top:3%;right:5%}}
+
+.hero-logo{filter:drop-shadow(0 0 20px rgba(249,115,22,.4))}
+.hero h1 span{background:linear-gradient(90deg,#a78bfa,#fb923c,#a78bfa);background-size:220% 100%;
+ -webkit-background-clip:text;background-clip:text;color:transparent;animation:hwText 7s linear infinite}
+@keyframes hwText{to{background-position:220% 0}}
+.eyebrow:before{content:"🎃 "}
+.feature:hover .icon-box{color:var(--hw2);background:rgba(249,115,22,.16);box-shadow:0 0 28px rgba(249,115,22,.35)}
+.feature:hover,.shot:hover{border-color:rgba(249,115,22,.55)}
+.download-btn{background:linear-gradient(145deg,#fb923c,#ea580c);color:#1c0a00;box-shadow:0 10px 28px rgba(234,88,12,.4)}
+.download-btn:hover{box-shadow:0 14px 38px rgba(234,88,12,.6)}
+.splash-icon{box-shadow:0 0 50px rgba(249,115,22,.45)}
+.funding-fill{background:linear-gradient(90deg,#6b46c1,#f97316)}
+
+#hwToggle{position:fixed;left:14px;bottom:14px;z-index:1001;width:42px;height:42px;border-radius:50%;
+ border:1px solid rgba(249,115,22,.45);background:rgba(18,18,20,.85);color:#fff;font-size:20px;cursor:pointer;
+ backdrop-filter:blur(8px);transition:transform .2s,box-shadow .2s}
+#hwToggle:hover,#hwToggle:focus-visible{transform:scale(1.08);box-shadow:0 0 18px rgba(249,115,22,.5);outline:0}
+#hwToggle[aria-pressed=false]{opacity:.55;filter:grayscale(1)}
+.hw-off #hw-layer,.hw-off #hw-moon,.hw-off #particles,.hw-off .hw-deco{display:none}
+@media(prefers-reduced-motion:reduce){#hw-layer,#particles{display:none}}
