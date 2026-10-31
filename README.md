@@ -1,287 +1,454 @@
-<img src="assets/banner.png" alt="SoundBoard Pro — бесплатный саундборд для Windows" width="100%">
+ <img src="assets/banner.png" alt="SoundBoard Pro" width="100%">
 
 <div align="center">
 
 # 🔊 SoundBoard Pro
 
-**Бесплатный саундборд для Windows.** Звук из хоткея уходит прямо в микрофон — собеседники в Discord, зрители в OBS и игроки в голосовом чате слышат его так же, как твой голос.
+**Бесплатный саундборд для Windows 10 / 11**
+
+Звук из хоткея прямо в микрофон. Discord, OBS, игровые голосовые чаты — делись звуками так же легко, как собственным голосом.
 
 <p>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-Windows_10%2F11-f97316?logo=windows&logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Windows 10 / 11"></a>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/%D0%A6%D0%B5%D0%BD%D0%B0-%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE-22c55e?logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Цена: бесплатно"></a>
-  <a href="https://t.me/soundboardpro"><img src="https://img.shields.io/badge/Telegram-@soundboardpro-2CA5E0?logo=telegram&logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Telegram @soundboardpro"></a>
-  <a href="https://www.donationalerts.com/r/nullix"><img src="https://img.shields.io/badge/%D0%94%D0%BE%D0%BD%D0%B0%D1%82-DonationAlerts-eab308?labelColor=1a1726&style=for-the-badge" alt="Донат"></a>
-</p>
-<p>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/github/v/release/Null1x/SoundBoard-Pro?label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=8b5cf6&labelColor=1a1726&style=for-the-badge&logo=github&logoColor=white" alt="Версия"></a>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/releases"><img src="https://img.shields.io/github/downloads/Null1x/SoundBoard-Pro/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9&color=6d28d9&labelColor=1a1726&style=for-the-badge&logo=download&logoColor=white" alt="Скачиваний"></a>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/stargazers"><img src="https://img.shields.io/github/stars/Null1x/SoundBoard-Pro?label=%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B&color=eab308&labelColor=1a1726&style=for-the-badge&logo=github&logoColor=white" alt="Звёзды"></a>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/commits/main"><img src="https://img.shields.io/github/last-commit/Null1x/SoundBoard-Pro?label=%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&color=6d28d9&labelColor=1a1726&style=for-the-badge&logo=git&logoColor=white" alt="Обновлено"></a>
-  <a href="https://github.com/Null1x/SoundBoard-Pro/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Null1x/SoundBoard-Pro?label=%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F&color=22c55e&labelColor=1a1726&style=for-the-badge" alt="Лицензия"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-f97316?logo=windows&logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Windows 10 / 11"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/github/v/release/Null1x/SoundBoard-Pro?label=Release&color=8b5cf6&labelColor=1a1726&style=for-the-badge&logo=github" alt="Latest release"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases"><img src="https://img.shields.io/github/downloads/Null1x/SoundBoard-Pro/total?label=Downloads&color=6d28d9&labelColor=1a1726&style=for-the-badge&logo=download" alt="Downloads"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/stargazers"><img src="https://img.shields.io/github/stars/Null1x/SoundBoard-Pro?label=Stars&color=eab308&labelColor=1a1726&style=for-the-badge&logo=github" alt="Stars"></a>
 </p>
 
-[🇷🇺 Русский](#-русский) · [🇬🇧 English](#-english) · [📢 Telegram](https://t.me/soundboardpro) · [🌐 Сайт](https://null1x.github.io/SoundBoard-Pro/)
+[🇷🇺 Русский](#-русский) · [🇬🇧 English](#-english)
+
+[📥 Скачать](https://github.com/Null1x/SoundBoard-Pro/releases/latest) · [📢 Telegram](https://t.me/soundboardpro) · [🌐 Сайт](https://null1x.github.io/SoundBoard-Pro/)
 
 </div>
 
 ---
 
-## 🇷🇺 Русский
+# 🎃 SoundBoard Pro 1.1 — Happy Halloween!
 
-> ### ⬇️ [Скачать SoundBoard Pro 1.1](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
-> Windows 10 / 11 · бесплатно · установка 5 минут (нужен бесплатный виртуальный кабель VB-CABLE)
+<details open>
+<summary><b>✨ Что нового в версии 1.1</b></summary>
 
-### Что нового в 1.1 🎃
+### 🎃 Halloween Theme
 
-- **Halloween-тема**: чёрно-фиолетовая палитра, оранжевые акценты и анимированный фон. Шестерёнка настроек теперь тыква.
-- **Отмена удаления (Ctrl+Z)**: до 20 последних удалений, включая массовые.
-- **Плавная остановка**: «Стоп» и Panic теперь затухают, а не обрывают звук.
-- **Автонастройка устройств** и **мастер настройки аудио** с проверкой VB-CABLE, наушников и микрофона.
-- **Установка VB-CABLE прямо из приложения.**
-- Исправления зависаний, сбоев автовоспроизведения и ошибок VB-CABLE. Меньше нагрузки на CPU и RAM.
+Встречайте праздничную тему оформления!
 
-### Что это
+- Чёрно-фиолетовая палитра с оранжевыми акцентами.
+- Анимированный фон с черепами, пауками, летучими мышами и искрами.
+- Шестерёнка настроек заменена интерактивной тыквой, которая загорается при наведении.
+- Отдельное оформление диалоговых окон.
 
-SoundBoard Pro — саундборд для Windows на PyQt6. Нажимаешь хоткей — звук уходит в микрофон: Discord, OBS, голосовой чат в игре. Никаких подписок, никаких прав администратора, никакого запуска «от имени администратора», чтобы хоткеи работали в игре.
+### ⚡ Новые возможности
 
-Сделано как бесплатная замена Soundpad: те же задачи, без оплаты.
+- **Отмена удаления (Ctrl+Z):** восстановление до 20 последних операций удаления, включая массовое удаление.
+- **Плавная остановка:** звук теперь затухает при нажатии «Стоп» и Panic.
+- **Автонастройка аудиоустройств:** автоматический подбор подходящих устройств для воспроизведения и трансляции.
+- **Мастер настройки аудио:** пошаговая проверка VB-CABLE, наушников и микрофона.
+- **Установка VB-CABLE:** скачивание официального установщика и запуск установки прямо из приложения.
+- **Адаптация интерфейса:** цвет выделения элементов автоматически подстраивается под выбранную тему.
 
-### Возможности
+### 🛠️ Исправления и оптимизация
 
-| | Возможность | Что даёт |
+- Исправлены зависания настроек и проблемы при изменении размеров окон.
+- Улучшено определение и выбор аудиоустройств.
+- Исправлены сбои автовоспроизведения.
+- Устранены конфликты при быстром переключении воспроизведения.
+- Повышена надёжность библиотеки и сохранности звуков.
+- Исправлены проблемы при одновременном воспроизведении нескольких звуков.
+- Оптимизированы ресемплинг, использование оперативной памяти и нагрузка на процессор.
+- Улучшена локализация и работа интерфейса на русском и английском языках.
+
+</details>
+
+---
+
+# 🇷🇺 Русский
+
+## 📥 Скачать SoundBoard Pro
+
+<div align="center">
+
+<a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/СКАЧАТЬ_SOUND_BOARD_PRO_1.1-8b5cf6?style=for-the-badge&logo=windows&logoColor=white" alt="Скачать SoundBoard Pro"></a>
+
+**Windows 10 / 11 · x64 · Бесплатно**
+
+</div>
+
+Последняя версия: [GitHub Releases](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
+
+## 💡 Что такое SoundBoard Pro?
+
+SoundBoard Pro — бесплатный саундборд для Windows, созданный на Python и PyQt6.
+
+Программа позволяет воспроизводить звуки с помощью глобальных горячих клавиш и передавать их через виртуальный аудиокабель прямо в микрофон.
+
+Твои звуки смогут услышать собеседники в Discord, зрители на трансляциях OBS и другие игроки в голосовом чате.
+
+Проект создан как бесплатная альтернатива Soundpad — без платной подписки и лишней сложности.
+
+## ⚡ Основные возможности
+
+| | Возможность | Описание |
 |---|---|---|
-| ⚡ | **Нулевая задержка** | Воспроизведение через `sounddevice` — звук стартует мгновенно |
-| ⌨ | **Глобальные хоткеи** | Работают из игр и других приложений, права администратора не нужны |
-| 🎧 | **Двойная маршрутизация** | Звук идёт одновременно в наушники и в виртуальный кабель: слышишь сам и слышат другие |
-| ◉ | **Виртуальный кабель** | Автопоиск VB-Audio при запуске — руками ничего настраивать не надо |
-| ✦ | **Наложение звуков** | Несколько звуков играют одновременно и накладываются друг на друга |
-| 🎨 | **8 тем оформления** | Тема и язык переключаются на ходу, без перезапуска программы |
-| 🔍 | **Поиск по звукам** | Мгновенный поиск по всем категориям |
-| 🗂 | **Категории** | Библиотека по папкам, отдельная громкость и усиление для каждой |
+| ⚡ | **Быстрое воспроизведение** | Запуск звуков практически мгновенно |
+| ⌨️ | **Глобальные хоткеи** | Работают даже тогда, когда открыта игра или другое приложение |
+| 🎧 | **Двойная маршрутизация** | Одновременное воспроизведение в наушники и виртуальный кабель |
+| ◉ | **Автоопределение VB-CABLE** | Поиск виртуального аудиоустройства |
+| ✦ | **Наложение звуков** | Несколько звуков могут воспроизводиться одновременно |
+| 🎨 | **Темы оформления** | Несколько цветовых тем, включая Halloween |
+| 🔍 | **Поиск** | Быстрый поиск по библиотеке |
+| 🗂️ | **Категории** | Организация звуков по папкам, отдельная громкость и усиление |
 
-### Скриншоты
+## 🖼️ Скриншоты
 
 | Главное окно | Настройки |
+|:---:|:---:|
+| <img src="assets/screenshot-main.png" width="520" alt="Главное окно SoundBoard Pro"> | <img src="assets/screenshot-settings.png" width="300" alt="Настройки SoundBoard Pro"> |
+| <sub>Библиотека звуков и управление воспроизведением</sub> | <sub>Настройка программы и оформление</sub> |
+
+## 🚀 Установка
+
+**1. Скачай программу**
+
+Перейди в раздел [последних релизов](https://github.com/Null1x/SoundBoard-Pro/releases/latest) и скачай установщик `SoundBoardPro-Setup-1.1.exe`.
+
+**2. Установи VB-CABLE**
+
+Для передачи звука в микрофон необходим бесплатный виртуальный аудиокабель VB-CABLE.
+
+В SoundBoard Pro 1.1 появилась возможность скачать установщик прямо из приложения. Также его можно получить вручную на [официальном сайте VB-Audio](https://vb-audio.com/Cable/).
+
+При установке драйвера потребуется подтверждение прав администратора. После установки рекомендуется перезагрузить компьютер.
+
+**3. Настрой микрофон**
+
+Нажми `Win + R`, введи `mmsys.cpl` и нажми Enter.
+
+1. Открой вкладку **Запись**.
+2. Выбери свой настоящий микрофон и открой его свойства.
+3. Перейди во вкладку **Прослушать**.
+4. Включи «Прослушивать с данного устройства».
+5. В качестве устройства воспроизведения выбери `CABLE Input (VB-Audio Virtual Cable)`.
+6. Нажми «Применить».
+
+Теперь в виртуальный кабель будет передаваться и твой голос, и звуки из SoundBoard Pro.
+
+**4. Настрой SoundBoard Pro**
+
+Запусти программу и воспользуйся автонастройкой или мастером настройки аудио.
+
+Если автоматическое определение не сработало, укажи устройства вручную:
+
+- **Для себя:** твои наушники или колонки.
+- **Для трансляции:** `CABLE Input (VB-Audio Virtual Cable)`.
+
+**5. Выбери виртуальный микрофон**
+
+В приложении, куда нужно передавать звук, установи `CABLE Output (VB-Audio Virtual Cable)` в качестве устройства ввода.
+
+| Приложение | Где настроить |
 |---|---|
-| <img src="assets/screenshot-main.png" width="520"> | <img src="assets/screenshot-settings.png" width="300"> |
-| <sub>Категории, устройства и воспроизведение</sub> | <sub>Тема, язык, экспериментальные функции</sub> |
+| **Discord** | Настройки → Голос и видео → Устройство ввода |
+| **OBS** | Источник → Захват входного аудиопотока |
+| **Игры** | Настройки голосового чата → Микрофон |
 
-### Установка (5 минут)
+**6. Настрой Discord**
 
-**1. Скачай установщик**
+Если звуки слышны слишком тихо или обрываются, проверь настройки шумоподавления.
 
-Возьми `SoundBoardPro-Setup-1.1.exe` из [последнего релиза](https://github.com/Null1x/SoundBoard-Pro/releases/latest) и запусти его.
+Открой «Голос и видео» и при необходимости отключи:
 
-**2. Поставь VB-CABLE** — бесплатный виртуальный аудиокабель, без него звук не попадёт в микрофон
+- Эхоподавление.
+- Шумоподавление (Krisp).
+- Автоматическую регулировку усиления.
 
-1. Скачай с [vb-audio.com/Cable](https://vb-audio.com/Cable/)
-2. Распакуй архив и запусти `VBCABLE_Setup_x64.exe` **от имени администратора**
-3. Перезагрузи компьютер
+Discord может воспринимать звуки саундборда как фоновый шум.
 
-**3. Заведи свой микрофон в кабель**
-
-Нажми `Win + R`, впиши `mmsys.cpl`, Enter — откроется окно «Звук».
-
-1. Вкладка **Запись** → выбери **свой настоящий микрофон** (не CABLE) → **Свойства**
-2. Вкладка **Прослушать** → поставь галочку **«Прослушивать с данного устройства»**
-3. В списке ниже, **«Воспроизводить с данного устройства»**, выбери **CABLE Input (VB-Audio Virtual Cable)**
-4. **Применить** → **ОК**
-
-Теперь в кабель идёт и твой голос, и звуки из SoundBoard Pro. Без этого шага собеседник услышит только звуки — голоса не будет.
-
-**4. Запусти SoundBoard Pro**
-
-Программа сама найдёт кабель. Если не нашла — выбери в поле трансляции **CABLE Input (VB-Audio Virtual Cable)**, а в поле «Для себя» свои наушники или колонки, чтобы слышать звуки самому.
-
-**5. Поставь `CABLE Output` микрофоном там, куда транслируешь**
-
-| Куда | Что нажать |
-|---|---|
-| **Discord** | Настройки → Голос и видео → Устройство ввода → `CABLE Output (VB-Audio Virtual Cable)` |
-| **OBS** | Источник «Захват входного аудиопотока» → устройство `CABLE Output` |
-| **Игра** | В настройках голосового чата выбери микрофоном `CABLE Output` |
-
-**6. В Discord выключи шумодав**
-
-Настройки → Голос и видео → выключи **«Эхоподавление»**, **«Шумоподавление»** (Krisp) и **«Автоматическая регулировка усиления»**. Discord считает звуки из саундборда фоновым шумом и режет их. Если звуки слышно тихо или они обрываются — проверяй это первым делом.
-
-### Частые вопросы
+## ❓ Частые вопросы
 
 <details>
 <summary><b>Windows пишет «Windows защитила ваш компьютер»</b></summary>
 
-Это SmartScreen. Он срабатывает на любом неподписанном `.exe`, а сертификат подписи стоит денег — установщик пока не подписан. Нажми «Подробнее» → «Выполнить в любом случае». Проверить файл можно на [VirusTotal](https://www.virustotal.com/).
+Это предупреждение SmartScreen. Установщик пока не имеет цифровой подписи.
+
+Если ты скачал программу из официального репозитория, можешь проверить файл через [VirusTotal](https://www.virustotal.com/).
 
 </details>
 
 <details>
-<summary><b>Программа не видит VB-Cable</b></summary>
+<summary><b>Программа не видит VB-CABLE</b></summary>
 
-Убедись, что кабель установлен именно от имени администратора и что компьютер перезагружен после установки. Затем нажми в программе кнопку обновления списка устройств.
+Убедись, что драйвер установлен с правами администратора и компьютер был перезагружен после установки.
 
-</details>
-
-<details>
-<summary><b>Собеседник слышит звуки, но не слышит меня</b></summary>
-
-Пропущен шаг 3 — микрофон не заведён в кабель. `Win + R` → `mmsys.cpl` → вкладка **Запись** → свой микрофон → **Свойства** → вкладка **Прослушать** → поставь галочку **«Прослушивать с данного устройства»** и выбери в списке `CABLE Input (VB-Audio Virtual Cable)`.
+Затем воспользуйся кнопкой обновления списка аудиоустройств.
 
 </details>
 
 <details>
-<summary><b>Звуки слышно тихо или они обрываются</b></summary>
+<summary><b>Собеседник слышит звуки, но не слышит мой голос</b></summary>
 
-Это шумодав Discord. Настройки → Голос и видео → выключи «Эхоподавление», «Шумоподавление» (Krisp) и «Автоматическая регулировка усиления».
-
-</details>
-
-<details>
-<summary><b>В игре не работают хоткеи</b></summary>
-
-Проверь, что хоткей не занят самой игрой. Если игра запущена от администратора, запусти от администратора и SoundBoard Pro.
+Проверь настройку микрофона из третьего шага установки. Убедись, что настоящий микрофон передаёт звук в `CABLE Input`.
 
 </details>
 
 <details>
-<summary><b>Антивирус ругается на установщик</b></summary>
+<summary><b>Звуки слишком тихие или обрываются</b></summary>
 
-Ложное срабатывание: сборки PyInstaller часто попадают в эвристику антивирусов. Файл можно проверить на [VirusTotal](https://www.virustotal.com/).
+Проверь настройки шумоподавления Discord. Иногда они могут блокировать звуки, передаваемые через виртуальный кабель.
 
 </details>
 
 <details>
-<summary><b>Требования</b></summary>
+<summary><b>В игре не работают горячие клавиши</b></summary>
 
-Windows 10 или 11 (x64). Больше ничего не нужно.
+Проверь, не занята ли комбинация самой игрой.
+
+Если игра запущена с правами администратора, Windows может ограничивать взаимодействие с обычным приложением. В таком случае может потребоваться запуск SoundBoard Pro с аналогичными правами.
 
 </details>
 
-### Обратная связь
+<details>
+<summary><b>Антивирус обнаруживает угрозу в установщике</b></summary>
 
-**Напиши, что не работает.** Проект делает один человек, и любой отзыв — это буквально то, из-за чего выходят обновления.
+Некоторые антивирусы могут ошибочно реагировать на приложения, собранные через PyInstaller.
 
-📧 **Почта для багов, жалоб и идей:** [limora342@gmail.com](mailto:limora342@gmail.com)
-📢 **Новости и обновления:** [t.me/soundboardpro](https://t.me/soundboardpro)
+Проверь файл на [VirusTotal](https://www.virustotal.com/) и убедись, что скачал его из официального репозитория.
 
-Что полезно указать: версия Windows и версия программы, что делал, что ожидал, что получилось вместо этого, скриншот или короткое видео, если можно.
+</details>
 
-### Поддержать проект
+<details>
+<summary><b>Какие системные требования?</b></summary>
 
-SoundBoard Pro был бесплатным и останется бесплатным. Если он тебе пригодился — [поддержи разработку](https://www.donationalerts.com/r/nullix) или просто поставь ⭐ этому репозиторию: звёзды помогают другим людям его найти.
+- Windows 10 или Windows 11.
+- Архитектура x64.
+- VB-CABLE для передачи звука в микрофон.
 
-## 🇬🇧 English
+</details>
 
-> ### ⬇️ [Download SoundBoard Pro 1.1](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
-> Windows 10 / 11 · free · 5-minute setup (requires the free VB-CABLE virtual audio cable)
+## 💬 Обратная связь
 
-### What's new in 1.1 🎃
+SoundBoard Pro развивается благодаря отзывам пользователей.
 
-- **Halloween theme**: black and purple palette, orange accents and an animated background. The settings gear is now a pumpkin.
-- **Undo delete (Ctrl+Z)**: up to 20 recent deletions, including bulk deletes.
-- **Smooth stop**: "Stop" and Panic now fade out instead of cutting off.
-- **Audio auto-setup** and an **audio setup wizard** that checks VB-CABLE, headphones and microphone.
-- **Install VB-CABLE from inside the app.**
-- Fixes for freezes, autoplay crashes and VB-CABLE errors. Lower CPU and RAM usage.
+Если ты обнаружил ошибку, хочешь предложить новую функцию или просто поделиться впечатлениями — буду рад обратной связи!
 
-### What it is
+- 📧 **Почта:** [limora342@gmail.com](mailto:limora342@gmail.com)
+- 📢 **Telegram:** [@soundboardpro](https://t.me/soundboardpro)
+- 🐛 **Сообщить об ошибке:** [GitHub Issues](https://github.com/Null1x/SoundBoard-Pro/issues)
 
-SoundBoard Pro is a soundboard for Windows built with PyQt6. Hit a hotkey — the sound goes into your microphone, so people on Discord, your OBS viewers or players in game voice chat hear it exactly like your voice. No subscription, no admin rights, no "run as administrator" just to make hotkeys work in a game.
+При сообщении об ошибке желательно указать версию Windows, версию программы, описание проблемы и приложить скриншот.
 
-Built as a free replacement for Soundpad: same job, no payment.
+## ❤️ Поддержать разработку
 
-### Features
+SoundBoard Pro бесплатен и таким останется.
 
-| | Feature | What it does |
+Если программа оказалась тебе полезна, ты можешь поддержать её дальнейшую разработку:
+
+- ⭐ Поставить звезду репозиторию на GitHub.
+- 💜 [Поддержать проект через DonationAlerts](https://www.donationalerts.com/r/nullix).
+- 📢 Рассказать о программе друзьям.
+
+Любая поддержка помогает развивать проект и выпускать новые обновления!
+
+---
+
+# 🇬🇧 English
+
+## 📥 Download SoundBoard Pro
+
+<div align="center">
+
+<a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/DOWNLOAD_SOUND_BOARD_PRO_1.1-8b5cf6?style=for-the-badge&logo=windows&logoColor=white" alt="Download SoundBoard Pro"></a>
+
+**Windows 10 / 11 · x64 · Free**
+
+</div>
+
+Get the latest version: [GitHub Releases](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
+
+## 💡 What is SoundBoard Pro?
+
+SoundBoard Pro is a free soundboard for Windows, built with Python and PyQt6.
+
+Play sounds using global hotkeys and route them directly into your microphone through a virtual audio cable.
+
+Your friends on Discord, viewers on OBS and teammates in in-game voice chats can hear your sounds just like your voice.
+
+A free alternative to Soundpad, without paid subscriptions.
+
+## ⚡ Features
+
+| | Feature | Description |
 |---|---|---|
-| ⚡ | **Zero latency** | Playback through `sounddevice` — sounds start instantly |
-| ⌨ | **Global hotkeys** | Work from inside games and other apps, no administrator needed |
-| 🎧 | **Dual routing** | The sound goes to your headphones *and* to the virtual cable at the same time |
-| ◉ | **Virtual cable** | VB-Audio is detected automatically on startup |
-| ✦ | **Sound overlay** | Several sounds can play and layer at the same time |
-| 🎨 | **8 themes** | Theme and language switch instantly, no restart |
-| 🔍 | **Instant search** | Search across every category |
-| 🗂 | **Categories** | Organise your library, per-category volume and gain |
+| ⚡ | **Fast playback** | Sounds start almost instantly |
+| ⌨️ | **Global hotkeys** | Work while playing games or using other applications |
+| 🎧 | **Dual audio routing** | Play sounds through your headphones and virtual cable simultaneously |
+| ◉ | **VB-CABLE detection** | Automatically detect the virtual audio device |
+| ✦ | **Sound overlay** | Multiple sounds can play simultaneously |
+| 🎨 | **Themes** | Multiple color themes, including Halloween |
+| 🔍 | **Search** | Quickly find sounds in your library |
+| 🗂️ | **Categories** | Organize sounds into folders with individual volume and gain settings |
 
-### Install
+## 🖼️ Screenshots
 
-**1. Download the installer** — `SoundBoardPro-Setup-1.1.exe` from the [latest release](https://github.com/Null1x/SoundBoard-Pro/releases/latest).
+| Main window | Settings |
+|:---:|:---:|
+| <img src="assets/screenshot-main.png" width="520" alt="SoundBoard Pro main window"> | <img src="assets/screenshot-settings.png" width="300" alt="SoundBoard Pro settings"> |
+| <sub>Sound library and playback controls</sub> | <sub>Application settings and customization</sub> |
 
-**2. Install VB-CABLE** — free virtual audio cable: [vb-audio.com/Cable](https://vb-audio.com/Cable/). Run `VBCABLE_Setup_x64.exe` **as administrator**, then reboot.
+## 🚀 Installation
 
-**3. Route your own microphone into the cable**
+**1. Download the application**
 
-Press `Win + R`, type `mmsys.cpl`, hit Enter.
+Go to [GitHub Releases](https://github.com/Null1x/SoundBoard-Pro/releases/latest) and download `SoundBoardPro-Setup-1.1.exe`.
 
-1. **Recording** tab → select **your real microphone** (not CABLE) → **Properties**
-2. **Listen** tab → tick **"Listen to this device"**
-3. Under **"Playback through this device"** pick **CABLE Input (VB-Audio Virtual Cable)**
-4. **Apply** → **OK**
+**2. Install VB-CABLE**
 
-Now the cable carries both your voice and the sounds from SoundBoard Pro. Skip this step and people will hear the sounds but not you.
+A free virtual audio cable is required to route sound into your microphone.
 
-**4. Launch SoundBoard Pro** — it finds the cable and sets it as the broadcasting output automatically. If it doesn't, pick **CABLE Input (VB-Audio Virtual Cable)** as the broadcasting device and your headphones as the monitor device.
+SoundBoard Pro 1.1 can download the installer directly from the application. Alternatively, get it from the [official VB-Audio website](https://vb-audio.com/Cable/).
 
-**5. Select `CABLE Output (VB-Audio Virtual Cable)` as the input device** in Discord (Voice & Video → Input Device), OBS (Audio Input Capture) or your game's voice chat settings.
+Administrator permission is required to install the driver. Restart your computer after installation.
 
-**6. Turn off Discord's noise suppression** — Settings → Voice & Video → disable **Echo Cancellation**, **Noise Suppression** (Krisp) and **Automatic Gain Control**. Discord treats soundboard audio as background noise and cuts it. If sounds come through too quiet or get chopped up, check this first.
+**3. Route your microphone**
 
-### FAQ
+Press `Win + R`, type `mmsys.cpl` and hit Enter.
+
+1. Open the **Recording** tab.
+2. Select your real microphone and open its properties.
+3. Go to the **Listen** tab.
+4. Enable **Listen to this device**.
+5. Select `CABLE Input (VB-Audio Virtual Cable)` as the playback device.
+6. Click Apply.
+
+Your microphone and SoundBoard Pro audio will now be routed through the virtual cable.
+
+**4. Configure SoundBoard Pro**
+
+Launch the application and use automatic audio setup or the audio setup wizard.
+
+If automatic detection fails, select the devices manually:
+
+- **Monitor output:** your headphones or speakers.
+- **Broadcast output:** `CABLE Input (VB-Audio Virtual Cable)`.
+
+**5. Select your virtual microphone**
+
+Set `CABLE Output (VB-Audio Virtual Cable)` as your input device in the application where you want to transmit audio.
+
+| Application | Settings |
+|---|---|
+| **Discord** | Settings → Voice & Video → Input Device |
+| **OBS** | Add an Audio Input Capture source |
+| **Games** | Voice Chat Settings → Microphone |
+
+**6. Configure Discord**
+
+If sounds are too quiet or get cut off, check Discord's noise suppression settings.
+
+Open Voice & Video and, if necessary, disable:
+
+- Echo Cancellation.
+- Noise Suppression (Krisp).
+- Automatic Gain Control.
+
+Discord may mistake soundboard audio for background noise.
+
+## ❓ FAQ
 
 <details>
 <summary><b>Windows SmartScreen warns me about the installer</b></summary>
 
-It flags any unsigned `.exe`, and code signing certificates cost money — the build isn't signed yet. Click "More info" → "Run anyway". You can scan the file on [VirusTotal](https://www.virustotal.com/).
+This is a SmartScreen warning. The installer is currently unsigned.
+
+If you downloaded it from the official repository, you can scan it using [VirusTotal](https://www.virustotal.com/).
 
 </details>
 
 <details>
-<summary><b>VB-Cable isn't detected</b></summary>
+<summary><b>VB-CABLE is not detected</b></summary>
 
-Make sure it was installed as administrator and that you rebooted afterwards. Then hit the device refresh button in the app.
+Make sure the driver was installed with administrator permissions and restart your computer.
+
+Then refresh the audio device list in SoundBoard Pro.
 
 </details>
 
 <details>
-<summary><b>People hear the sounds but not my voice</b></summary>
+<summary><b>People hear sounds but cannot hear my voice</b></summary>
 
-Step 3 is missing — your microphone isn't routed into the cable. `Win + R` → `mmsys.cpl` → **Recording** tab → your microphone → **Properties** → **Listen** tab → tick **"Listen to this device"** and select `CABLE Input (VB-Audio Virtual Cable)`.
+Check the microphone configuration in step 3. Make sure your real microphone is routed into `CABLE Input`.
 
 </details>
 
 <details>
 <summary><b>Sounds are too quiet or keep cutting out</b></summary>
 
-That's Discord's noise suppression. Settings → Voice & Video → disable Echo Cancellation, Noise Suppression (Krisp) and Automatic Gain Control.
+Check Discord's noise suppression settings. They may block sounds routed through the virtual cable.
 
 </details>
 
 <details>
-<summary><b>Requirements</b></summary>
+<summary><b>Hotkeys don't work in games</b></summary>
 
-Windows 10 or 11 (x64). Nothing else.
+Make sure the key combination isn't already used by the game.
+
+If the game runs as administrator, Windows may restrict interaction with a regular application. You may need to run SoundBoard Pro with the same permissions.
 
 </details>
 
-### Feedback
+<details>
+<summary><b>My antivirus detects the installer</b></summary>
 
-**Tell me what's broken.** This is a one-person project — every report is literally what decides the next update.
+Some antivirus programs may incorrectly flag applications built with PyInstaller.
 
-📧 **Bugs, complaints and ideas:** [limora342@gmail.com](mailto:limora342@gmail.com)
-📢 **News and updates:** [t.me/soundboardpro](https://t.me/soundboardpro)
+Scan the file using [VirusTotal](https://www.virustotal.com/) and make sure you downloaded it from the official repository.
 
-Useful details: your Windows and app version, what you did, what you expected, what happened instead, plus a screenshot if you can.
+</details>
 
-### Support
+<details>
+<summary><b>System requirements</b></summary>
 
-SoundBoard Pro is free and stays free. If it's useful to you, [support development](https://www.donationalerts.com/r/nullix) or just ⭐ this repo — stars are how other people find it.
+- Windows 10 or Windows 11.
+- x64 architecture.
+- VB-CABLE for microphone audio routing.
 
-<img src="assets/cta.png" alt="Скачать SoundBoard Pro бесплатно" width="100%">
+</details>
+
+## 💬 Feedback
+
+SoundBoard Pro grows with user feedback.
+
+Found a bug, have an idea for a new feature or just want to share your experience? I'd love to hear from you!
+
+- 📧 **Email:** [limora342@gmail.com](mailto:limora342@gmail.com)
+- 📢 **Telegram:** [@soundboardpro](https://t.me/soundboardpro)
+- 🐛 **Bug reports:** [GitHub Issues](https://github.com/Null1x/SoundBoard-Pro/issues)
+
+When reporting a bug, please include your Windows version, application version, a description of the issue and a screenshot if possible.
+
+## ❤️ Support development
+
+SoundBoard Pro is free and will stay free.
+
+If you find the application useful, you can support its development:
+
+- ⭐ Star the repository on GitHub.
+- 💜 [Support the project via DonationAlerts](https://www.donationalerts.com/r/nullix).
+- 📢 Share the application with your friends.
+
+Every bit of support helps keep the project growing!
+
+---
 
 <div align="center">
-<sub><b>SoundBoard Pro</b> · <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest">Скачать</a> · <a href="https://t.me/soundboardpro">Telegram</a> · <a href="https://null1x.github.io/SoundBoard-Pro/">Сайт</a> · <a href="https://www.youtube.com/@NullixYT">YouTube</a> · <a href="mailto:limora342@gmail.com">limora342@gmail.com</a><br>
-Сделано <a href="https://github.com/Null1x">Nullix</a></sub>
-</div>
-Press `Win + R`, type `mmsys.cpl`, hit Enter.
 
-1. **Recording** tab → select **your real microphone** (not CABLE) → **Properties**
-2. **Listen** tab → tick **
+<img src="assets/cta.png" alt="SoundBoard Pro — Download for free" width="100%">
+
+### 🔊 SoundBoard Pro
+
+**Made with ❤️ by [Nullix](https://github.com/Null1x)**
+
+[📥 Download](https://github.com/Null1x/SoundBoard-Pro/releases/latest) · [📢 Telegram](https://t.me/soundboardpro) · [🌐 Website](https://null1x.github.io/SoundBoard-Pro/) · [▶️ YouTube](https://www.youtube.com/@NullixYT)
+
+<sub>Free soundboard for Windows 10 / 11</sub>
+
+</div>
