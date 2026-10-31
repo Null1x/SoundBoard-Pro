@@ -1,5 +1,5 @@
 (()=>{
-const root=document.documentElement;
+const rnd=(a,b)=>a+Math.random()*(b-a);
 
 document.querySelectorAll('.feature,.reveal').forEach(el=>el.addEventListener('transitionend',e=>{
   if(e.propertyName==='opacity')el.style.transitionDelay='0s';
@@ -57,6 +57,18 @@ const bat=()=>'<svg viewBox="0 0 120 60">'+
 
 const ghost='<svg viewBox="0 0 100 100"><path d="M24 90V46Q24 12 50 12t26 34v44l-7-8-7 8-6-8-6 8-7-8-7 8Z" fill="#f4eeff"/><ellipse cx="41" cy="42" rx="5" ry="8" fill="#241532"/><ellipse cx="59" cy="42" rx="5" ry="8" fill="#241532"/><ellipse cx="50" cy="60" rx="5" ry="7" fill="#241532"/></svg>';
 
+const yard=`<svg viewBox="0 0 1000 160" preserveAspectRatio="xMidYMax slice">`+
+  '<path d="M0 150Q250 136 500 146T1000 140V160H0Z" fill="#0b0814"/>'+
+  '<path d="M40 160Q44 100 36 60M38 100Q20 84 6 80M40 80Q56 58 70 52M37 66Q28 48 18 40" fill="none" stroke="#0b0814" stroke-width="7" stroke-linecap="round"/>'+
+  [[120,96,70,64],[230,110,56,50],[700,104,64,56],[860,90,78,70]].map(([x,y,w,h])=>
+    `<path d="M${x} ${y+h}V${y+w/2}A${w/2} ${w/2} 0 0 1 ${x+w} ${y+w/2}V${y+h}Z" fill="#17102b"/>`).join('')+
+  '<g transform="translate(732 104)" fill="#05030a"><ellipse cx="0" cy="-12" rx="13" ry="16"/><circle cx="0" cy="-34" r="10"/>'+
+  '<path d="M-9 -40L-10 -54L-2 -44ZM9 -40L10 -54L2 -44Z"/><path d="M12 -4Q32 -6 28 -24" stroke="#05030a" stroke-width="4" fill="none" stroke-linecap="round"/>'+
+  '<circle cx="-4" cy="-35" r="2.2" fill="#fde047"/><circle cx="4" cy="-35" r="2.2" fill="#fde047"/></g>'+
+  '<g transform="translate(300 146)"><ellipse rx="22" ry="16" fill="#ea580c"/><path d="M-10 -4L-4 -4L-7 3ZM6 -4L12 -4L9 3ZM-6 6H6L3 10Z" fill="#1c0a00"/></g>'+
+  '<g transform="translate(330 150)"><ellipse rx="14" ry="11" fill="#f97316"/></g>'+
+  '</svg>';
+
 const cobweb=()=>{
   const angs=[...Array(9)].map((_,i)=>i*Math.PI/16);
   const P=(r,a)=>[(r*Math.cos(a)).toFixed(1),(r*Math.sin(a)).toFixed(1)];
@@ -73,7 +85,7 @@ const cobweb=()=>{
 const COB=cobweb();
 
 const layer=document.createElement('div');
-layer.id='hw-layer';layer.setAttribute('aria-hidden','true');
+layer.id='hw-layer';layer.className='hw-deco';layer.setAttribute('aria-hidden','true');
 
 const hang=(left,len,sw)=>`<div class="hw-hang" style="left:${left}%;--len:${len}px;--sw:${sw}s"><i></i><div class="hw-spi">${spider()}</div></div>`;
 
@@ -96,35 +108,86 @@ const floats=FLOAT.map(([k,l,t,s,r,d,dur,o],i)=>
 const bats=[[12,84,19,0,40],[28,60,26,5,-30],[46,72,22,11,60],[62,96,30,3,-50],[8,56,24,16,20]]
   .map(([y,s,t,d,dy])=>`<div class="hw-bat-f" style="--y:${y}vh;--s:${s}px;--t:${t}s;--d:${d}s;--dy:${dy}px">${bat()}</div>`).join('');
 
+let ff='';
+for(let i=0;i<22;i++){
+  ff+=`<div class="hw-ff" style="left:${rnd(0,100).toFixed(1)}%;top:${rnd(10,95).toFixed(1)}%;--t:${rnd(10,20).toFixed(1)}s;--d:-${rnd(0,10).toFixed(1)}s;--p:${rnd(2,5).toFixed(1)}s;--dx:${rnd(-120,120).toFixed(0)}px;--dy:${rnd(-120,120).toFixed(0)}px"></div>`;
+}
+const eyeAt=(l,t,x,d)=>`<div class="hw-eye${x?' x2':''}" style="left:${l}%;top:${t}%;--t:14s;--d:-${d}s"><span></span><span></span></div>`;
+const eyes=eyeAt(2.2,44,false,2)+eyeAt(96.5,58,true,9)+eyeAt(1.5,74,true,5);
+
 layer.innerHTML=
   '<div class="hw-fog"></div>'+
   `<div class="hw-cw tl">${COB}</div><div class="hw-cw tr">${COB}</div><div class="hw-cw bl">${COB}</div><div class="hw-cw br">${COB}</div>`+
   hang(9,150,6)+hang(86,240,7.5)+
-  floats+bats+
+  floats+bats+ff+eyes+
+  '<div class="hw-hell"></div>'+
   `<div class="hw-ghost">${ghost}</div>`;
 document.body.prepend(layer);
 
-const vig=document.createElement('div');vig.id='hw-vig';vig.setAttribute('aria-hidden','true');
-const flash=document.createElement('div');flash.id='hw-flash';flash.setAttribute('aria-hidden','true');
+const GN=28, step=1000/GN;
+const garlandColors=['#fb923c','#a78bfa','#fde047','#f97316','#c4b5fd','#fb7185'];
+let wire='M0 8', bulbsHtml='';
+for(let i=0;i<GN;i++){
+  const x0=i*step, x1=(i+1)*step, xm=x0+step/2;
+  wire+=` Q${xm} 26 ${x1} 8`;
+  const c=garlandColors[i%garlandColors.length];
+  bulbsHtml+=`<div class="hw-bulb" style="left:${(xm/10).toFixed(2)}%;top:12px;--c:${c};--t:${rnd(1.2,2.8).toFixed(2)}s;--d:-${rnd(0,3).toFixed(2)}s"></div>`;
+}
+const garland=document.createElement('div');
+garland.id='hw-garland';garland.className='hw-deco';garland.setAttribute('aria-hidden','true');
+garland.innerHTML=`<svg viewBox="0 0 1000 40" preserveAspectRatio="none"><path class="wire" d="${wire}"/></svg>`+bulbsHtml;
+document.body.prepend(garland);
+
+const vig=document.createElement('div');vig.id='hw-vig';vig.className='hw-deco';vig.setAttribute('aria-hidden','true');
+const flash=document.createElement('div');flash.id='hw-flash';flash.className='hw-deco';flash.setAttribute('aria-hidden','true');
 document.body.append(vig,flash);
+
+const c=document.getElementById('particles');
+c.classList.add('hw-deco');
+const ctx=c.getContext('2d');
+let w=0,h=0,dpr=1,P=[],raf=0;
+const sprite=col=>{const s=document.createElement('canvas');s.width=s.height=32;const g=s.getContext('2d'),r=g.createRadialGradient(16,16,0,16,16,16);
+ r.addColorStop(0,col+'1)');r.addColorStop(.35,col+'.45)');r.addColorStop(1,col+'0)');g.fillStyle=r;g.fillRect(0,0,32,32);return s;};
+const S=['rgba(255,170,70,','rgba(255,120,30,','rgba(170,140,255,','rgba(140,100,235,'].map(sprite);
+const mk=init=>({x:Math.random()*w,y:init?Math.random()*h:h+20,s:6+Math.random()*12,k:S[Math.random()*4|0],
+ vy:.25+Math.random()*.6,a:.3+Math.random()*.6,t:Math.random()*6.28,f:.01+Math.random()*.02,sw:.15+Math.random()*.35});
+function size(){dpr=Math.min(devicePixelRatio||1,1.5);w=innerWidth;h=innerHeight;
+ c.width=w*dpr;c.height=h*dpr;c.style.width=w+'px';c.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0);
+ P=Array.from({length:Math.min(60,Math.max(24,w/26|0))},()=>mk(true));}
+function draw(){
+  ctx.clearRect(0,0,w,h);
+  for(const p of P){p.y-=p.vy;p.t+=p.f;p.x+=Math.sin(p.t)*p.sw;
+    if(p.y<-20)Object.assign(p,mk(false));
+    ctx.globalAlpha=p.a*(.6+.4*Math.sin(p.t*3));ctx.drawImage(p.k,p.x-p.s,p.y-p.s,p.s*2,p.s*2);}
+  ctx.globalAlpha=1;
+  raf=requestAnimationFrame(draw);
+}
 
 const hero=document.querySelector('.hero');
 if(hero){
-  const m=document.createElement('div');m.id='hw-moon';m.setAttribute('aria-hidden','true');hero.prepend(m);
+  const m=document.createElement('div');m.id='hw-moon';m.className='hw-deco';m.setAttribute('aria-hidden','true');hero.prepend(m);
+  const y=document.createElement('div');y.className='hw-yard hw-deco';y.setAttribute('aria-hidden','true');y.innerHTML=yard;hero.prepend(y);
   hero.insertAdjacentHTML('beforeend',
-    `<div class="hw-hp r" aria-hidden="true">${pumpkin(false)}</div>`+
-    `<div class="hw-sk" style="left:19%;top:14%;width:64px;transform:rotate(-12deg)" aria-hidden="true">${skull(2)}</div>`+
-    `<div class="hw-sk" style="right:22%;bottom:18%;width:54px;transform:rotate(10deg);animation-delay:-2s" aria-hidden="true">${skull(4)}</div>`);
+    `<div class="hw-hp r hw-deco" aria-hidden="true">${pumpkin(false)}</div>`+
+    `<div class="hw-sk hw-deco" style="left:19%;top:14%;width:64px;transform:rotate(-12deg)" aria-hidden="true">${skull(2)}</div>`+
+    `<div class="hw-sk hw-deco" style="right:22%;bottom:18%;width:54px;transform:rotate(10deg);animation-delay:-2s" aria-hidden="true">${skull(4)}</div>`);
 }
 
 const shell=document.querySelector('.footer-shell');
 if(shell){
   shell.insertAdjacentHTML('beforeend',
-    `<div class="hw-cw tl" style="width:120px;height:120px;opacity:.35" aria-hidden="true">${COB}</div>`+
-    `<div class="hw-fsk" aria-hidden="true">${skull(1)}</div>`);
+    `<div class="hw-cw tl hw-deco" style="width:120px;height:120px;opacity:.35" aria-hidden="true">${COB}</div>`+
+    `<div class="hw-fsk hw-deco" aria-hidden="true">${skull(1)}</div>`);
 }
-
 document.querySelectorAll('.feature').forEach(f=>{
-  f.insertAdjacentHTML('beforeend',`<div class="hw-fcw" aria-hidden="true">${COB}</div>`);
+  f.insertAdjacentHTML('beforeend',`<div class="hw-fcw hw-deco" aria-hidden="true">${COB}</div>`);
 });
+
+size();
+raf=requestAnimationFrame(draw);
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){cancelAnimationFrame(raf);raf=0;}
+  else if(!raf)raf=requestAnimationFrame(draw);
+});
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(size,150);},{passive:true});
 })();
