@@ -6,11 +6,19 @@
 
 **Бесплатный саундборд для Windows.** Звук из хоткея уходит прямо в микрофон — собеседники в Discord, зрители в OBS и игроки в голосовом чате слышат его так же, как твой голос.
 
-[![Release](https://img.shields.io/github/v/release/Null1x/SoundBoard-Pro?label=%D1%80%D0%B5%D0%BB%D0%B8%D0%B7&color=2fbf7a&style=flat-square)](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Null1x/SoundBoard-Pro/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9&color=2fbf7a&style=flat-square)](https://github.com/Null1x/SoundBoard-Pro/releases)
-[![Platform](https://img.shields.io/badge/Windows-10%20%7C%2011-2fbf7a?style=flat-square&logo=windows&logoColor=white)](#-установка)
-[![Telegram](https://img.shields.io/badge/Telegram-@soundboardpro-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/soundboardpro)
-[![Stars](https://img.shields.io/github/stars/Null1x/SoundBoard-Pro?label=%D0%B7%D0%B2%D1%91%D0%B7%D0%B4&color=2fbf7a&style=flat-square)](https://github.com/Null1x/SoundBoard-Pro/stargazers)
+<p>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-Windows_10%2F11-f97316?logo=windows&logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Windows 10 / 11"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/badge/%D0%A6%D0%B5%D0%BD%D0%B0-%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE-22c55e?logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Цена: бесплатно"></a>
+  <a href="https://t.me/soundboardpro"><img src="https://img.shields.io/badge/Telegram-@soundboardpro-2CA5E0?logo=telegram&logoColor=white&labelColor=1a1726&style=for-the-badge" alt="Telegram @soundboardpro"></a>
+  <a href="https://www.donationalerts.com/r/nullix"><img src="https://img.shields.io/badge/%D0%94%D0%BE%D0%BD%D0%B0%D1%82-DonationAlerts-eab308?labelColor=1a1726&style=for-the-badge" alt="Донат"></a>
+</p>
+<p>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest"><img src="https://img.shields.io/github/v/release/Null1x/SoundBoard-Pro?label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=8b5cf6&labelColor=1a1726&style=for-the-badge&logo=github&logoColor=white" alt="Версия"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/releases"><img src="https://img.shields.io/github/downloads/Null1x/SoundBoard-Pro/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9&color=6d28d9&labelColor=1a1726&style=for-the-badge&logo=download&logoColor=white" alt="Скачиваний"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/stargazers"><img src="https://img.shields.io/github/stars/Null1x/SoundBoard-Pro?label=%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B&color=eab308&labelColor=1a1726&style=for-the-badge&logo=github&logoColor=white" alt="Звёзды"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/commits/main"><img src="https://img.shields.io/github/last-commit/Null1x/SoundBoard-Pro?label=%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&color=6d28d9&labelColor=1a1726&style=for-the-badge&logo=git&logoColor=white" alt="Обновлено"></a>
+  <a href="https://github.com/Null1x/SoundBoard-Pro/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Null1x/SoundBoard-Pro?label=%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F&color=22c55e&labelColor=1a1726&style=for-the-badge" alt="Лицензия"></a>
+</p>
 
 [🇷🇺 Русский](#-русский) · [🇬🇧 English](#-english) · [📢 Telegram](https://t.me/soundboardpro) · [🌐 Сайт](https://null1x.github.io/SoundBoard-Pro/)
 
@@ -20,8 +28,17 @@
 
 ## 🇷🇺 Русский
 
-> ### ⬇️ [Скачать SoundBoard Pro 1.0](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
+> ### ⬇️ [Скачать SoundBoard Pro 1.1](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
 > Windows 10 / 11 · бесплатно · установка 5 минут (нужен бесплатный виртуальный кабель VB-CABLE)
+
+### Что нового в 1.1 🎃
+
+- **Halloween-тема**: чёрно-фиолетовая палитра, оранжевые акценты и анимированный фон. Шестерёнка настроек теперь тыква.
+- **Отмена удаления (Ctrl+Z)**: до 20 последних удалений, включая массовые.
+- **Плавная остановка**: «Стоп» и Panic теперь затухают, а не обрывают звук.
+- **Автонастройка устройств** и **мастер настройки аудио** с проверкой VB-CABLE, наушников и микрофона.
+- **Установка VB-CABLE прямо из приложения.**
+- Исправления зависаний, сбоев автовоспроизведения и ошибок VB-CABLE. Меньше нагрузки на CPU и RAM.
 
 ### Что это
 
@@ -53,7 +70,7 @@ SoundBoard Pro — саундборд для Windows на PyQt6. Нажимае�
 
 **1. Скачай установщик**
 
-Возьми `SoundBoardPro-Setup-1.0.exe` из [последнего релиза](https://github.com/Null1x/SoundBoard-Pro/releases/latest) и запусти его.
+Возьми `SoundBoardPro-Setup-1.1.exe` из [последнего релиза](https://github.com/Null1x/SoundBoard-Pro/releases/latest) и запусти его.
 
 **2. Поставь VB-CABLE** — бесплатный виртуальный аудиокабель, без него звук не попадёт в микрофон
 
@@ -154,8 +171,17 @@ SoundBoard Pro был бесплатным и останется бесплат�
 
 ## 🇬🇧 English
 
-> ### ⬇️ [Download SoundBoard Pro 1.0](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
+> ### ⬇️ [Download SoundBoard Pro 1.1](https://github.com/Null1x/SoundBoard-Pro/releases/latest)
 > Windows 10 / 11 · free · 5-minute setup (requires the free VB-CABLE virtual audio cable)
+
+### What's new in 1.1 🎃
+
+- **Halloween theme**: black and purple palette, orange accents and an animated background. The settings gear is now a pumpkin.
+- **Undo delete (Ctrl+Z)**: up to 20 recent deletions, including bulk deletes.
+- **Smooth stop**: "Stop" and Panic now fade out instead of cutting off.
+- **Audio auto-setup** and an **audio setup wizard** that checks VB-CABLE, headphones and microphone.
+- **Install VB-CABLE from inside the app.**
+- Fixes for freezes, autoplay crashes and VB-CABLE errors. Lower CPU and RAM usage.
 
 ### What it is
 
@@ -178,7 +204,7 @@ Built as a free replacement for Soundpad: same job, no payment.
 
 ### Install
 
-**1. Download the installer** — `SoundBoardPro-Setup-1.0.exe` from the [latest release](https://github.com/Null1x/SoundBoard-Pro/releases/latest).
+**1. Download the installer** — `SoundBoardPro-Setup-1.1.exe` from the [latest release](https://github.com/Null1x/SoundBoard-Pro/releases/latest).
 
 **2. Install VB-CABLE** — free virtual audio cable: [vb-audio.com/Cable](https://vb-audio.com/Cable/). Run `VBCABLE_Setup_x64.exe` **as administrator**, then reboot.
 
@@ -255,3 +281,7 @@ SoundBoard Pro is free and stays free. If it's useful to you, [support developme
 <sub><b>SoundBoard Pro</b> · <a href="https://github.com/Null1x/SoundBoard-Pro/releases/latest">Скачать</a> · <a href="https://t.me/soundboardpro">Telegram</a> · <a href="https://null1x.github.io/SoundBoard-Pro/">Сайт</a> · <a href="https://www.youtube.com/@NullixYT">YouTube</a> · <a href="mailto:limora342@gmail.com">limora342@gmail.com</a><br>
 Сделано <a href="https://github.com/Null1x">Nullix</a></sub>
 </div>
+Press `Win + R`, type `mmsys.cpl`, hit Enter.
+
+1. **Recording** tab → select **your real microphone** (not CABLE) → **Properties**
+2. **Listen** tab → tick **
